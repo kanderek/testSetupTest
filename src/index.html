@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script src="js/lib/require.js"></script>
+    <script> 
+      require(['../requireConfig'], function() {
+        console.log('require config?');
+        require(['helloWorld'], function(h) {
+          console.log(h);
+        });
+      });
+    </script>
+  </body>
+</html>
